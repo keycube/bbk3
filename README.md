@@ -30,9 +30,15 @@ The 3D models were made with Fusion 360. The models have been tested with a resi
 
 The components listed below were chosen according to our desires, the dimensions in the 3D models were made accordingly. If you want to choose other electronic components, don't forget to modify the 3D models.
 
+
 **Microcontroller**: https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html
+
 **Magnetic connection**: https://www.adafruit.com/product/5413
+
 **Battery**: https://www.adafruit.com/product/1317
+
 **Keys**: https://www.adafruit.com/product/5113
+
 **Keys Sockets**: https://www.adafruit.com/product/5756
+
 **Magnets**: https://www.amazon.fr/Deryun-aimants-puissants-n%C3%A9odyme-r%C3%A9frig%C3%A9rateur/dp/B0936VD5N4/ref=sr_1_1_sspa?keywords=aimant&qid=1697424015&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
