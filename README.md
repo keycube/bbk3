@@ -1,4 +1,4 @@
-![Logo](https://github.com/keycube/bbk3/blob/main/BBK3.png)
+![Logo](https://github.com/keycube/bbk3/blob/main/Logo.png)
 
 # INTRODUCTION
 
