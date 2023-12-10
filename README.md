@@ -1,4 +1,4 @@
-![Logo](https://github.com/keycube/bbk3/blob/main/Logo.png)
+![Logo](https://github.com/keycube/bbk3/blob/main/assets/Logo_BBK3.png)
 
 # INTRODUCTION
 
@@ -8,23 +8,23 @@ The BBK3 (BabyCube) is the miniature derivative of the K3. Thanks to these 5 key
 
 The 3D models were made with Fusion 360. The models have been tested with a resin printer but are intended for an FDM printer. (The colors are present to facilitate the 3D preview, you are free to choose when printing.)
 
-![Logo](https://github.com/keycube/bbk3/blob/main/Model_3D_BBK3_1.png)
+![Logo](https://github.com/keycube/bbk3/blob/main/assets/Model_3D_BBK3_1.png)
 
 **Below**
 
-![Logo](https://github.com/keycube/bbk3/blob/main/Model_3D_BBK3_2.png)
+![Logo](https://github.com/keycube/bbk3/blob/main/assets/Model_3D_BBK3_2.png)
 
 **Above**
 
-![Logo](https://github.com/keycube/bbk3/blob/main/Model_3D_BBK3_3.png)
+![Logo](https://github.com/keycube/bbk3/blob/main/assets/Model_3D_BBK3_3.png)
 
 **Support**
 
-![Logo](https://github.com/keycube/bbk3/blob/main/Model_3D_BBK3_4.png)
+![Logo](https://github.com/keycube/bbk3/blob/main/assets/Model_3D_BBK3_4.png)
 
 **Keys**
 
-![Logo](https://github.com/keycube/bbk3/blob/main/Model_3D_BBK3_5.png)
+![Logo](https://github.com/keycube/bbk3/blob/main/assets/Model_3D_BBK3_5.png)
 
 # Electronic components
 
