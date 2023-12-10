@@ -42,3 +42,7 @@ The components listed below were chosen according to our desires, the dimensions
 **Keys Sockets**: https://www.adafruit.com/product/5756
 
 **Magnets**: https://www.amazon.fr/Deryun-aimants-puissants-n%C3%A9odyme-r%C3%A9frig%C3%A9rateur/dp/B0936VD5N4/ref=sr_1_1_sspa?keywords=aimant&qid=1697424015&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
+
+# TUTORIAL
+
+..._TODO_...
