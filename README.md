@@ -6,7 +6,7 @@ The BBK3 (BabyCube) is the miniature derivative of the K3. Thanks to these 5 key
 
 # 3D Model
 
-The 3D models were made with Fusion 360. The models have been tested with a resin printer but are intended for an FDM printer.
+The 3D models were made with Fusion 360. The models have been tested with a resin printer but are intended for an FDM printer. (The colors are present to facilitate the 3D preview, you are free to choose when printing.)
 
 ![Logo](https://github.com/keycube/bbk3/blob/main/Model_3D_BBK3_1.png)
 
