@@ -8,4 +8,4 @@ The BBK3 (BabyCube) is the miniature derivative of the K3. Thanks to these 5 key
 
 The 3D models were made with Fusion 360
 
-![Logo](https://github.com/keycube/bbk3/blob/main/Model3D1.png)
+![Logo](https://github.com/keycube/bbk3/blob/main/Model_3D_BBK3_1.png)
