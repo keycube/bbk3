@@ -26,7 +26,7 @@ The 3D models were made with Fusion 360. The models have been tested with a resi
 
 ![Logo](https://github.com/keycube/bbk3/blob/main/assets/Model_3D_BBK3_5.png)
 
-# Electronic components
+# ELECTRONIC COMPONENTS
 
 The components listed below were chosen according to our desires, the dimensions in the 3D models were made accordingly. If you want to choose other electronic components, don't forget to modify the 3D models.
 
