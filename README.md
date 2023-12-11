@@ -4,7 +4,7 @@
 
 The BBK3 (BabyCube) is the miniature derivative of the K3. Thanks to these 5 keys, its gyroscope and accelerator, you can control a multitude of applications thanks to its bluetooh connection.
 
-# 3D MODEL
+# 3D model
 
 The 3D models were made with Fusion 360. The models have been tested with a resin printer but are intended for an FDM printer. (The colors are present to facilitate the 3D preview, you are free to choose when printing.)
 
@@ -43,11 +43,11 @@ The components listed below were chosen according to our desires, the dimensions
 
 **Magnets**: https://www.amazon.fr/Deryun-aimants-puissants-n%C3%A9odyme-r%C3%A9frig%C3%A9rateur/dp/B0936VD5N4/ref=sr_1_1_sspa?keywords=aimant&qid=1697424015&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
 
-# TUTORIAL
+# Tutorial
 
 ..._TODO_...
 
-# CODE
+# Code
 
 To code, I used the Arduino IDE. I coded the code "BBK3.ino" as an example.
 
