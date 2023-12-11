@@ -51,8 +51,8 @@ The components listed below were chosen according to our desires, the dimensions
 
 To code, I used the Arduino IDE. I coded the code "BBK3.ino" as an example.
 
-__**- Connection**:__ The microcontroller creates a Bluetooth connection to be able to connect.
+**- Connection**: The microcontroller creates a Bluetooth connection to be able to connect.
 
-__**- Light animation**:__ The cube flashes red until it is connected and reacts green once it is. When the keys are not pressed, the LEDs are orange and when a key is clicked, the corresponding key is white. After 7 seconds without clicking, the keys turn red and create the animation of a beating heart, returning to normal at the slightest click.
+**- Light animation**: The cube flashes red until it is connected and reacts green once it is. When the keys are not pressed, the LEDs are orange and when a key is clicked, the corresponding key is white. After 7 seconds without clicking, the keys turn red and create the animation of a beating heart, returning to normal at the slightest click.
 
-__**- Actuators**:__ The gyroscope is used to move the mouse. The keys simulate the keyboard with Z, Q, S, D and left click on the top key.
+**- Actuators**: The gyroscope is used to move the mouse. The keys simulate the keyboard with Z, Q, S, D and left click on the top key.
