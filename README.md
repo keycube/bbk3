@@ -4,7 +4,7 @@
 
 The BBK3 (BabyCube) is the miniature derivative of the K3. Thanks to these 5 keys, its gyroscope and accelerator, you can control a multitude of applications thanks to its bluetooh connection.
 
-# 3D Model
+# 3D MODEL
 
 The 3D models were made with Fusion 360. The models have been tested with a resin printer but are intended for an FDM printer. (The colors are present to facilitate the 3D preview, you are free to choose when printing.)
 
@@ -47,7 +47,7 @@ The components listed below were chosen according to our desires, the dimensions
 
 ..._TODO_...
 
-# Code
+# CODE
 
 To code, I used the Arduino IDE. I coded the code "BBK3.ino" as an example.
 
