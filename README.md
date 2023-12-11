@@ -49,7 +49,7 @@ The components listed below were chosen according to our desires, the dimensions
 
 # Code
 
-To code, I used the Arduino IDE. I put the code "BBK3.ino" as an example.
+To code, I used the Arduino IDE. I coded the code "BBK3.ino" as an example.
 
 **- Connection**: The latter creates a Bluetooth connection to be able to connect.
 
