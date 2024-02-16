@@ -9,3 +9,15 @@ difference() {
     translate([0, 0, 1])
     cube([32.0, 32.0, 4.0], true);
 }
+
+translate([0, 8.5, 1.75])
+    cube([33, 1, 3.5], true);
+
+translate([0, -8.5, 1.75])
+    cube([33, 1, 3.5], true);
+
+translate([8.5, 0, 1.75])
+    cube([1, 33, 3.5], true);
+
+translate([-8.5, 0, 1.75])
+    cube([1, 33, 3.5], true);
