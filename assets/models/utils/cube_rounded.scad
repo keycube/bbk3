@@ -1,3 +1,10 @@
+centered = false;
+x = 5.5;
+y = 5.5;
+z = 5.5;
+radius = 0.5;
+
+
 // More information: https://danielupshaw.com/openscad-rounded-corners/
 module cube_rounded(size = [1, 1, 1], center = false, radius = 0.5) {
 	// If single value, convert to [x, y, z] vector
@@ -23,6 +30,6 @@ module cube_rounded(size = [1, 1, 1], center = false, radius = 0.5) {
 }
 
 // Example
-cube_rounded([5.0, 5.0, 3], false, 0.5);
+cube_rounded([x, y, z], centered, radius);
 $fa = 1;
 $fs = 0.1;
