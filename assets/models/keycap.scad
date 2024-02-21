@@ -18,16 +18,16 @@ module keycap(size, radius, thickness = 1.0) {
         }
         
         translate([0, 8.5, 1.75])
-            cube([width-1, 1, 2.5], true);
+            cube([width-thickness*2+0.1, 1, 2.5], true);
 
         translate([0, -8.5, 1.75])
-            cube([width-1, 1, 2.5], true);
+            cube([width-thickness*2+0.1, 1, 2.5], true);
 
         translate([8.5, 0, 1.75])
-            cube([1, depth-1, 2.5], true);
+            cube([1, depth-thickness*2+0.1, 2.5], true);
 
         translate([-8.5, 0, 1.75])
-            cube([1, depth-1, 2.5], true);
+            cube([1, depth-thickness*2+0.1, 2.5], true);
 
         translate([2.35+0.5, 0, 2.75])
             cube([1.0, 2.9, 4.5], true);
@@ -37,4 +37,4 @@ module keycap(size, radius, thickness = 1.0) {
     }
 }
 
-keycap([34.0, 34.0, 4.0], radius = 1.5);
+keycap([34.0, 34.0, 4.0], radius = 1.25);
