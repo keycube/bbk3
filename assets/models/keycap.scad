@@ -9,7 +9,7 @@ module keycap(size, radius, thickness = 1.0) {
         difference() {
             translate([0, 0, height])
             difference() {
-                cube_rounded([width, depth, height*2], true, 1.5);
+                cube_rounded([width, depth, height*2], true, radius);
                 translate([0, 0, (height+1)/2])
                     cube([width+1, depth+1, height+1], true);
             }
