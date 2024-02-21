@@ -11,17 +11,17 @@ difference() {
     cube([32.0, 32.0, 4.0], true);
 }
 
-translate([0, 8.5, 2.25])
-    cube([33, 1, 3.5], true);
+translate([0, 8.5, 1.75])
+    cube([33, 1, 2.5], true);
 
-translate([0, -8.5, 2.25])
-    cube([33, 1, 3.5], true);
+translate([0, -8.5, 1.75])
+    cube([33, 1, 2.5], true);
 
-translate([8.5, 0, 2.25])
-    cube([1, 33, 3.5], true);
+translate([8.5, 0, 1.75])
+    cube([1, 33, 2.5], true);
 
-translate([-8.5, 0, 2.25])
-    cube([1, 33, 3.5], true);
+translate([-8.5, 0, 1.75])
+    cube([1, 33, 2.5], true);
 
 translate([2.35+0.5, 0, 2.75])
     cube([1.0, 2.9, 4.5], true);
