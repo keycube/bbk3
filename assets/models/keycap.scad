@@ -22,8 +22,8 @@ translate([8.5, 0, 1.75])
 translate([-8.5, 0, 1.75])
     cube([1, 33, 3.5], true);
 
-translate([2.35, 0, 1.25])
+translate([2.35+0.5, 0, 1.25])
     cube([1.0, 2.9, 4.5], true);
 
-translate([-2.35, 0, 1.25])
+translate([-2.35-0.5, 0, 1.25])
     cube([1.0, 2.9, 4.5], true);
