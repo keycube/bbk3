@@ -4,6 +4,10 @@ module keycap(size, radius, thickness = 1.0, insertHeight = 4.0) {
     width = size[0];
     depth = size[1];
     height = size[2];
+    
+    insertSpacing = 4.7;
+    insertWidth = 1.05;
+    insertDepth = 2.9;
 
     union() {
         difference() {
@@ -29,11 +33,11 @@ module keycap(size, radius, thickness = 1.0, insertHeight = 4.0) {
         translate([-8.5, 0, 1.75])
             cube([1, depth-thickness*2+0.1, 2.5], true);
 
-        translate([2.35+0.525, 0, insertHeight/2+thickness])
-            cube([1.05, 2.9, insertHeight+0.01], true);
+        translate([insertSpacing/2+insertWidth/2, 0, insertHeight/2+thickness])
+            cube([insertWidth, insertDepth, insertHeight+0.01], true);
 
-        translate([-2.35-0.525, 0, insertHeight/2+thickness])
-            cube([1.05, 2.9, insertHeight+0.01], true);
+        translate([-insertSpacing/2-insertWidth/2, 0, insertHeight/2+thickness])
+            cube([insertWidth, insertDepth, insertHeight+0.01], true);
     }
 }
 
