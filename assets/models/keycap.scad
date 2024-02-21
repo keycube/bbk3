@@ -1,5 +1,10 @@
 use <utils/cube_rounded.scad>
 
+x = 34.5;
+y = 34.5;
+z = 4.5;
+radius = 1.5;
+
 module keycap(size, radius, thickness = 1.0, insertHeight = 4.0) {
     width = size[0];
     depth = size[1];
@@ -41,4 +46,4 @@ module keycap(size, radius, thickness = 1.0, insertHeight = 4.0) {
     }
 }
 
-keycap([34.0, 34.0, 4.0], radius = 1.25);
+keycap([x, y, z], radius);
