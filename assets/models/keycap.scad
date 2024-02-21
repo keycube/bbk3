@@ -1,6 +1,6 @@
 use <utils/cube_rounded.scad>
 
-module keycap(size, radius) {
+module keycap(size, radius, thickness = 1.0) {
     width = size[0];
     depth = size[1];
     height = size[2];
@@ -13,8 +13,8 @@ module keycap(size, radius) {
                 translate([0, 0, (height+1)/2])
                     cube([width+1, depth+1, height+1], true);
             }
-            translate([0, 0, height/2+1])
-                cube([width-2, depth-2, height], true);
+            translate([0, 0, height/2+thickness])
+                cube([width-thickness*2, depth-thickness*2, height], true);
         }
         
         translate([0, 8.5, 1.75])
