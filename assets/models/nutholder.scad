@@ -1,18 +1,21 @@
-module nutholder() {
+diameter = 2;
+height = 2;
+size = 4;
+
+module nutholder(diameter, size, height) {
     difference() {
-        cube([6, 6, 1.75+2], center = true);
+        cube([size+2, size+2, height+2], center = true);
 
         rotate([0, 0, 45])
         union() {
-            translate([4, 0, 0])
-                cube([8, 4, 1.75], center = true);
-            s = 4;
-            inradius = (s/2)/(sqrt(3)/2);
-            cylinder(r=inradius, h=1.75, $fn=6, center = true);
+            translate([size, 0, 0])
+                cube([size*2, size, height], center = true);
+            inradius = (size/2)/(sqrt(3)/2);
+            cylinder(r=inradius, h=height, $fn=6, center = true);
         }
         
-        cylinder(r=1.05, h=10, $fn=200, center = true); 
+        cylinder(r=(diameter+0.1)/2, h=height+3, $fn=200, center = true); 
     }
 }
 
-nutholder();
+nutholder(diameter, size, height);
