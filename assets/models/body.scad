@@ -5,8 +5,8 @@ use <nutholder.scad>
 x = 40;
 y = 40;
 z = 40;
-thickness = 1.2;
 radius = 1.5;
+thickness = 1.2;
 hole = 14;
 
 module body(size, radius, thickness = 1.2, hole = 14) {
