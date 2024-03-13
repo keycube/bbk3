@@ -29,16 +29,16 @@ module body(size, radius, thickness = 1.2, hole = 14) {
             cube([hole, hole, height+0.1], true);
             
             translate([0, 0, height/2-radius])
-                cube([width+0.1, depth+0.1, 2], true); // remove 1 mm
+                cube([width+0.1, depth+0.1, 2*2], true); // remove 2 mm
         }
         
-        nh_diameter = 2.2;
+        nh_radius = 1.1;
         nh_size = 4;
         nh_height = 2;
-        mirror_copy([0, 1, 0])
-            mirror_copy([1, 0, 0])
-                translate([width/-2+(nh_size+2)/2+thickness, depth/-2+(nh_size+2)/2+thickness, height/2-radius-(nh_height+2)/2-1])
-                    nutholder(nh_diameter, nh_size, nh_height);
+        mirror_copy([1, 0, 0])
+            mirror_copy([0, 1, 0])
+                translate([width/-2+(nh_size+2)/2+thickness, depth/2-(nh_size+2)/2-thickness, height/2-radius-(nh_height+2)/2-2]) 
+                    nutholder(nh_radius, nh_size, nh_height);
     }
 }
 
