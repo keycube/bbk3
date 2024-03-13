@@ -1,4 +1,4 @@
-diameter = 2;
+diameter = 2.2;
 height = 2;
 size = 4;
 
@@ -14,7 +14,7 @@ module nutholder(diameter, size, height) {
             cylinder(r=inradius, h=height, $fn=6, center = true);
         }
         
-        cylinder(r=(diameter+0.1)/2, h=height+3, $fn=200, center = true); 
+        cylinder(r=diameter/2, h=height+3, $fn=200, center = true); 
     }
 }
 
