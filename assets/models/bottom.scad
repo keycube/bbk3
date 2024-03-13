@@ -6,7 +6,7 @@ height = 2.5;
 radius = 1.5;
 innerRadius = 1.1;
 outerRadius = 1.8;
-spacing = 0.5;
+spacing = 1.5;
 
 module hole(position, innerRadius, outerRadius) {
     x = position[0];
@@ -23,10 +23,10 @@ module bottom(size, radius, innerRadius, outerRadius, spacing) {
         translate([0, 0, height*-1])
             cube([width+0.1, depth+0.1, height*2], center = true);
         
-        hole([width/2-outerRadius-radius-spacing, depth/2-outerRadius-radius-spacing], innerRadius, outerRadius);
-        hole([(width/2-outerRadius-radius-spacing)*-1, depth/2-outerRadius-radius-spacing], innerRadius, outerRadius);
-        hole([width/2-outerRadius-radius-spacing, (depth/2-outerRadius-radius-spacing)*-1], innerRadius, outerRadius);
-        hole([(width/2-outerRadius-radius-spacing)*-1, (depth/2-outerRadius-radius-spacing)*-1], innerRadius, outerRadius);
+        hole([width/2-outerRadius-spacing, depth/2-outerRadius-spacing], innerRadius, outerRadius);
+        hole([(width/2-outerRadius-spacing)*-1, depth/2-outerRadius-spacing], innerRadius, outerRadius);
+        hole([width/2-outerRadius-spacing, (depth/2-outerRadius-spacing)*-1], innerRadius, outerRadius);
+        hole([(width/2-outerRadius-spacing)*-1, (depth/2-outerRadius-spacing)*-1], innerRadius, outerRadius);
     }
 }
 
