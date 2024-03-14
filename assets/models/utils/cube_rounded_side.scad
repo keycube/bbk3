@@ -4,7 +4,7 @@ y = 8;
 z = 1;
 radius = 1.5;
 
-module cube_rounded_side(size, radius, center) {
+module cube_rounded_side(size, center, radius) {
     width = size[0];
     depth = size[1];
     height = size[2];
@@ -19,5 +19,5 @@ module cube_rounded_side(size, radius, center) {
         }
 }
 
-cube_rounded_side([x, y, z], radius, true);
+cube_rounded_side([x, y, z], true, radius);
 $fs = 0.1;
