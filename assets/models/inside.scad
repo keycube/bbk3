@@ -22,19 +22,18 @@ module battery_cover() {
 }
 
 module pcb_cover() {
-    translate([-1.25, 0, 3.75])
+    translate([-1.25, 0, 3.75]) // top
+        cube([1, 18, 1.5], true);
+    translate([2.75, 0, 3.75]) // top
         cube([1, 18, 1.5], true);
     
-    translate([2.75, 0, 3.75])
-        cube([1, 18, 1.5], true);
+    translate([0.75, 0, 5.5]) // flat top
+        cube([5, 22, 2], true);
     
-    translate([0.75, 0, 5])
-        cube([5, 20, 1], true);
-    
-    translate([0.75, 9.5, -4.5])
-        cube([5, 1, 18], true);
-    translate([0.75, -9.5, -4.5])
-        cube([5, 1, 18], true);
+    translate([0.75, 10, -4.5]) // side
+        cube([5, 2, 18], true);
+    translate([0.75, -10, -4.5]) // side
+        cube([5, 2, 18], true);
 }
 
 module switch_cover() {
@@ -56,20 +55,20 @@ module inside() {
                         cylinder(h = 10, r = 1.1, $fn=200, center = true);
             
 //            cube([5, 22, 2], true); // battery hole
-//            translate([0.75, 0, 0])
-//                cube([6, 18, 2], true); // pcb hole
-            cube([4, 9.5, 2], true); // switch hole
+            translate([0.75, 0, 0])
+                cube([6, 18, 2], true); // pcb hole
+//            cube([4, 9.5, 2], true); // switch hole
         }
         
 //        translate([0, 0, 14])
 //            color("red")
 //            battery_cover();
-//        translate([0, 0, 14])
-//            color("red")
-//            pcb_cover();
-        translate([0, 0, 2])
+        translate([0, 0, 14])
             color("red")
-            switch_cover();
+            pcb_cover();
+//        translate([0, 0, 2])
+//            color("red")
+//            switch_cover();
     }    
 }
 
@@ -91,10 +90,10 @@ spacing = 1.2+1.2;
 //translate([0, 0, 14.25])
 //    battery();
 
-//translate([0, 0, 8.5])
-//rotate([0, 90, 0])
-//    pcb_seeedstudioxiao();
+translate([0, 0, 8.5])
+rotate([0, 90, 0])
+    pcb_seeedstudioxiao();
 
-translate([0, 0, 1])
-rotate([180, 0, 90])
-    switch();
+//translate([0, 0, 1])
+//rotate([180, 0, 90])
+//    switch();
