@@ -1,5 +1,6 @@
 use <utils/cube_rounded.scad>
 use <utils/cube_rounded_side.scad>
+use <utils/mirror_copy.scad>
 
 width = 40;
 depth = 40;
@@ -24,10 +25,9 @@ module bottom(size, radius, innerRadius, outerRadius, spacing) {
         translate([0, 0, height*-1])
             cube([width+0.1, depth+0.1, height*2], center = true);
         
-        hole([width/2-outerRadius-spacing, depth/2-outerRadius-spacing], innerRadius, outerRadius);
-        hole([(width/2-outerRadius-spacing)*-1, depth/2-outerRadius-spacing], innerRadius, outerRadius);
-        hole([width/2-outerRadius-spacing, (depth/2-outerRadius-spacing)*-1], innerRadius, outerRadius);
-        hole([(width/2-outerRadius-spacing)*-1, (depth/2-outerRadius-spacing)*-1], innerRadius, outerRadius);
+        mirror_copy([0, 1, 0])
+            mirror_copy([1, 0, 0])
+                hole([width/2-outerRadius-spacing, depth/2-outerRadius-spacing], innerRadius, outerRadius);
         
         translate([-0.75, 0, 0])
             cube_rounded_side([3.75, 8.25, 6], true, 1.25);
