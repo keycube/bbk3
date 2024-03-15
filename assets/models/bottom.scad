@@ -1,4 +1,5 @@
 use <utils/cube_rounded.scad>
+use <utils/cube_rounded_side.scad>
 
 width = 40;
 depth = 40;
@@ -27,6 +28,18 @@ module bottom(size, radius, innerRadius, outerRadius, spacing) {
         hole([(width/2-outerRadius-spacing)*-1, depth/2-outerRadius-spacing], innerRadius, outerRadius);
         hole([width/2-outerRadius-spacing, (depth/2-outerRadius-spacing)*-1], innerRadius, outerRadius);
         hole([(width/2-outerRadius-spacing)*-1, (depth/2-outerRadius-spacing)*-1], innerRadius, outerRadius);
+        
+        translate([-0.75, 0, 0])
+            cube_rounded_side([3.75, 8.25, 6], true, 1.25);
+        translate([-3, 0, 0])
+            cube([10, 22, 2], true);
+        
+        translate([8, 0, -0.25])
+            cube([4, 9.5, 2], true);
+        translate([8, 0, 1.75/2+0.75])
+            linear_extrude(scale = 2, center = true, height=1.755)
+                square([2, 4.75], true);
+
     }
 }
 
