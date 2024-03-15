@@ -22,12 +22,12 @@ module battery_cover() {
 }
 
 module pcb_cover() {
-    translate([-1.25, 0, 3.75]) // top
+    translate([-1.25, 0, 3.75]) // top side
         cube([1, 18, 1.5], true);
-    translate([2.75, 0, 3.75]) // top
+    translate([2.75, 0, 3.75]) // top side
         cube([1, 18, 1.5], true);
     
-    translate([0.75, 0, 5.5]) // flat top
+    translate([0.75, 0, 5.5]) // top flat
         cube([5, 22, 2], true);
     
     translate([0.75, 10, -4.5]) // side
@@ -53,22 +53,26 @@ module inside() {
                 mirror_copy([0, 1, 0])
                     translate([20-1.2-3, 20-1.2-3, 0])
                         cylinder(h = 10, r = 1.1, $fn=200, center = true);
-            
-//            cube([5, 22, 2], true); // battery hole
-            translate([0.75, 0, 0])
-                cube([6, 18, 2], true); // pcb hole
-//            cube([4, 9.5, 2], true); // switch hole
+
+            translate([5.5, 0, 0])
+                cube([5, 22, 2], true); // battery hole
+            translate([-1.5, 0, 0])
+                cube([7, 18, 2], true); // pcb hole
+            translate([1, 0, 0])
+                cube([6, 10, 2], true); // pcb hole
+            translate([-8, 0, 0])
+            cube([4, 9.5, 2], true); // switch hole
         }
         
-//        translate([0, 0, 14])
-//            color("red")
-//            battery_cover();
-        translate([0, 0, 14])
+        translate([5.5, 0, 14])
+            color("red")
+            battery_cover();
+        translate([-1.25, 0, 14])
             color("red")
             pcb_cover();
-//        translate([0, 0, 2])
-//            color("red")
-//            switch_cover();
+        translate([-8, 0, 2])
+            color("red")
+            switch_cover();
     }    
 }
 
@@ -83,17 +87,20 @@ innerRadius = 1.1;
 outerRadius = 1.8;
 spacing = 1.2+1.2;
 
-//translate([0, 0, -0.0])
-//rotate([0, 180, 0])
-//bottom([width, depth, height], radius, innerRadius, outerRadius, spacing);
+translate([0, 0, -0.0])
+rotate([0, 180, 0])
+bottom([width, depth, height], radius, innerRadius, outerRadius, spacing);
 
-//translate([0, 0, 14.25])
-//    battery();
+translate([5.5, 0, 14.25])
+    color("yellow")
+        battery();
 
-translate([0, 0, 8.5])
-rotate([0, 90, 0])
-    pcb_seeedstudioxiao();
+translate([-1.25, 0, 8.5])
+    rotate([0, 90, 0])
+        color("yellow")
+            pcb_seeedstudioxiao();
 
-//translate([0, 0, 1])
-//rotate([180, 0, 90])
-//    switch();
+translate([-8, 0, 1])
+    rotate([180, 0, 90])
+        color("yellow")
+            switch();
