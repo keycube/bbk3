@@ -3,6 +3,8 @@ use <utils/mirror_copy.scad>
 use <battery.scad>
 use <pcb_SeeedStudioXIAO.scad>
 use <bottom.scad>
+use <switch.scad>
+
 
 module battery_cover() {
     mirror_copy([0, 1, 0])
@@ -35,6 +37,14 @@ module pcb_cover() {
         cube([5, 1, 18], true);
 }
 
+module switch_cover() {
+    mirror_copy([0, 1, 0])
+        translate([0, 5.5, 0.25])
+            cube([2.5, 1.5, 3.5], true);
+    translate([0, 0, 1.25])
+        cube([2.5, 11, 1.5], true);
+}
+
 module inside() {
     union() {
         difference() {
@@ -45,17 +55,21 @@ module inside() {
                     translate([20-1.2-3, 20-1.2-3, 0])
                         cylinder(h = 10, r = 1.1, $fn=200, center = true);
             
-            //cube([5, 22, 2], true); // battery hole
-            translate([0.75, 0, 0])
-                cube([6, 18, 2], true); // pcb hole
+//            cube([5, 22, 2], true); // battery hole
+//            translate([0.75, 0, 0])
+//                cube([6, 18, 2], true); // pcb hole
+            cube([4, 9.5, 2], true); // switch hole
         }
         
-        //translate([0, 0, 14])
-        //    color("red")
-        //    battery_cover();
-        translate([0, 0, 14])
+//        translate([0, 0, 14])
+//            color("red")
+//            battery_cover();
+//        translate([0, 0, 14])
+//            color("red")
+//            pcb_cover();
+        translate([0, 0, 2])
             color("red")
-            pcb_cover();
+            switch_cover();
     }    
 }
 
@@ -77,6 +91,10 @@ spacing = 1.2+1.2;
 //translate([0, 0, 14.25])
 //    battery();
 
-translate([0, 0, 8.5])
-rotate([0, 90, 0])
-    pcb_seeedstudioxiao();
+//translate([0, 0, 8.5])
+//rotate([0, 90, 0])
+//    pcb_seeedstudioxiao();
+
+translate([0, 0, 1])
+rotate([180, 0, 90])
+    switch();
