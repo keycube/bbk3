@@ -37,8 +37,13 @@ module bottom(size, radius, innerRadius, outerRadius, spacing) {
         translate([8, 0, -0.25])
             cube([4, 9.5, 2], true);
         translate([8, 0, 1.75/2+0.75])
-            linear_extrude(scale = 2, center = true, height=1.755)
+            linear_extrude(scale = 2, center = true, height=1.8)
                 square([2, 4.75], true);
+        
+        mirror_copy([0, 1, 0])
+            mirror_copy([1, 0, 0])
+                translate([12, 12, 0-0.25])
+                cylinder(h=2.5, r=3, center = false);
 
     }
 }
