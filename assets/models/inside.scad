@@ -4,6 +4,7 @@ use <battery.scad>
 use <pcb_SeeedStudioXIAO.scad>
 use <bottom.scad>
 use <switch.scad>
+use <body.scad>
 
 
 module battery_cover() {
@@ -79,6 +80,7 @@ module inside() {
 translate([0, 0, 0.5])
     inside();
 
+/*
 width = 40;
 depth = 40;
 height = 2.5;
@@ -104,3 +106,13 @@ translate([-8, 0, 1])
     rotate([180, 0, 90])
         color("yellow")
             switch();
+            
+x = 40;
+y = 40;
+z = 40;
+thickness = 1.2;
+hole = 14;
+translate([0, 0, (40-5)/2+0])
+rotate([0, 180, 0])
+body([x, y, z], radius, thickness, hole);
+*/
