@@ -7,10 +7,11 @@ depth = 40;
 height = 2.5;
 radius = 1.5;
 innerRadius = 1.1;
-outerRadius = 1.8;
-spacing = 1.5;
+outerRadius = 2;
+spacing = 4.2;
+magnetRadius = 3.2;
 
-module hole(position, innerRadius, outerRadius) {
+module screwhole(position, innerRadius, outerRadius) {
     x = position[0];
     y = position[1];
     translate([x, y, 1])
@@ -25,26 +26,29 @@ module bottom(size, radius, innerRadius, outerRadius, spacing) {
         translate([0, 0, height*-1])
             cube([width+0.1, depth+0.1, height*2], center = true);
         
+        // Screw hole
         mirror_copy([0, 1, 0])
             mirror_copy([1, 0, 0])
-                hole([width/2-outerRadius-spacing, depth/2-outerRadius-spacing], innerRadius, outerRadius);
+                screwhole([width/2-spacing, depth/2-spacing], innerRadius, outerRadius);
         
+        // USB-C hole
         translate([-0.75, 0, 0])
-            cube_rounded_side([3.75, 8.25, 6], true, 1.25);
-        translate([-3, 0, 0])
-            cube([10, 22, 2], true);
+            cube_rounded_side([3.75, 9.2, 6], true, 1.25);
+        translate([-2.5, 0, 0])
+            cube([11, 22, 2], true);
         
+        // Switch hole and placeholder
         translate([8, 0, -0.25])
             cube([4, 9.5, 2], true);
         translate([8, 0, 1.75/2+0.75])
             linear_extrude(scale = 2, center = true, height=1.8)
                 square([2, 4.75], true);
         
+        // Magnet placeholder
         mirror_copy([0, 1, 0])
             mirror_copy([1, 0, 0])
                 translate([12, 12, 0-0.25])
-                cylinder(h=2.5, r=3, center = false);
-
+                cylinder(h=2.5, r=magnetRadius, center = false);
     }
 }
 
