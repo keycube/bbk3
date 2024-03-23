@@ -50,27 +50,38 @@ module inside() {
         difference() {
             cube_rounded_side([40, 40, 1], true, 1.5);
             
+            // screw hole
             mirror_copy([1, 0, 0])
                 mirror_copy([0, 1, 0])
                     translate([20-1.2-3, 20-1.2-3, 0])
-                        cylinder(h = 10, r = 1.1, $fn=200, center = true);
+                        cylinder(h = 10, r = 1.15, $fn=100, center = true);
 
+            // battery hole
             translate([5.5, 0, 0])
-                cube([5, 22, 2], true); // battery hole
+                cube([5, 22, 2], true); 
+            
+            // pcb hole
             translate([-1.5, 0, 0])
-                cube([7, 18, 2], true); // pcb hole
+                cube([7, 18, 2], true); 
             translate([1, 0, 0])
-                cube([6, 10, 2], true); // pcb hole
+                cube([6, 10, 2], true);
+            
+            // switch hole
             translate([-8, 0, 0])
-            cube([4, 9.5, 2], true); // switch hole
+            cube([4, 9.5, 2], true);
         }
         
+        // battery cover
         translate([5.5, 0, 14])
             color("red")
             battery_cover();
+        
+        // pcb cover
         translate([-1.25, 0, 14])
             color("red")
             pcb_cover();
+        
+        // switch cover
         translate([-8, 0, 2])
             color("red")
             switch_cover();
@@ -87,13 +98,14 @@ height = 2.5;
 radius = 1.5;
 innerRadius = 1.1;
 outerRadius = 1.8;
-spacing = 1.2+1.2;
+spacing = 1.2+3;
 
 translate([0, 0, -0.0])
 rotate([0, 180, 0])
 bottom([width, depth, height], radius, innerRadius, outerRadius, spacing);
 
-translate([5.5, 0, 14.25])
+
+translate([5.5, 0, 14])
     color("yellow")
         battery();
 
@@ -106,7 +118,7 @@ translate([-8, 0, 1])
     rotate([180, 0, 90])
         color("yellow")
             switch();
-            
+    
 x = 40;
 y = 40;
 z = 40;
