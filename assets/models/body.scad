@@ -32,12 +32,12 @@ module body(size, radius, thickness = 1.2, hole = 14) {
                 cube([width+0.1, depth+0.1, 2*2], true); // remove 2 mm
         }
         
-        nh_radius = 1.1;
-        nh_size = 4;
+        nh_radius = 1.15;
+        nh_size = 4.5;
         nh_height = 2;
         mirror_copy([1, 0, 0])
             mirror_copy([0, 1, 0])
-                translate([width/-2+(nh_size+2)/2+thickness, depth/2-(nh_size+2)/2-thickness, height/2-radius-(nh_height+2)/2-2]) 
+                translate([width/-2+(nh_size+1.5)/2+thickness, depth/2-(nh_size+1.5)/2-thickness, height/2-radius-(nh_height+2)/2-2]) // UPDATE here (bad const related to nutholder)
                     nutholder(nh_radius, nh_size, nh_height);
     }
 }
