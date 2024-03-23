@@ -6,8 +6,8 @@ width = 40;
 depth = 40;
 height = 2.5;
 radius = 1.5;
-innerRadius = 1.1;
-outerRadius = 2;
+innerRadius = 1.15;
+outerRadius = 2.05;
 spacing = 4.2;
 magnetRadius = 3.2;
 
