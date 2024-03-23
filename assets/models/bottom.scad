@@ -47,7 +47,7 @@ module bottom(size, radius, innerRadius, outerRadius, spacing) {
         // Magnet placeholder
         mirror_copy([0, 1, 0])
             mirror_copy([1, 0, 0])
-                translate([12, 12, 0-0.25])
+                translate([12, 12, 0-0.5])
                 cylinder(h=2.5, r=magnetRadius, center = false);
     }
 }
