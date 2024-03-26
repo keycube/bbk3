@@ -1,4 +1,3 @@
-use <utils/cube_rounded_side.scad>
 use <utils/mirror_copy.scad>
 use <battery.scad>
 use <pcb_SeeedStudioXIAO.scad>
@@ -48,7 +47,7 @@ module switch_cover() {
 module inside() {
     union() {
         difference() {
-            cube_rounded_side([40, 40, 1], true, 1.5);
+            cube([40-1.3*2, 40-1.3*2, 1], true);
             
             // screw hole
             mirror_copy([1, 0, 0])
