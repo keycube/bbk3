@@ -47,7 +47,7 @@ module switch_cover() {
 module inside() {
     union() {
         difference() {
-            cube([40-1.3*2, 40-1.3*2, 1], true);
+            cube([40-1.35*2, 40-1.35*2, 1], true);
             
             // screw hole
             mirror_copy([1, 0, 0])
