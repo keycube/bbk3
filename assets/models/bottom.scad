@@ -44,6 +44,15 @@ module bottom(size, radius, innerRadius, outerRadius, spacing) {
             linear_extrude(scale = 2, center = true, height=1.8)
                 square([2, 4.75], true);
         
+        // Swith ON/OFF icon
+        translate([8.0, 7.5, 2.5])
+            cube_rounded_side([1, 3, 1], true, 0.5);
+        translate([8.0, -7.5, 2.5])        
+            difference() {
+                cylinder(h = 1, r = 1.33, center = true);
+                cylinder(h = 1, r = 0.75, center = true);
+            }
+        
         // Magnet placeholder
         mirror_copy([0, 1, 0])
             mirror_copy([1, 0, 0])
