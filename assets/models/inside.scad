@@ -22,18 +22,18 @@ module battery_cover() {
 }
 
 module pcb_cover() {
-    translate([-1.25, 0, 3.75]) // top side
-        cube([1, 18, 1.5], true);
-    translate([2.75, 0, 3.75]) // top side
-        cube([1, 18, 1.5], true);
+    translate([-1.25, 0, 5.25]) // top side
+        cube([1, 19, 1.5], true);
+    translate([2.75, 0, 5.25]) // top side
+        cube([1, 19, 1.5], true);
     
-    translate([0.75, 0, 5.5]) // top flat
+    translate([0.75, 0, 7]) // top flat
         cube([5, 22, 2], true);
     
-    translate([0.75, 10, -4.5]) // side
-        cube([5, 2, 18], true);
-    translate([0.75, -10, -4.5]) // side
-        cube([5, 2, 18], true);
+    translate([0.75, 10.25, -3.75]) // side
+        cube([5, 1.5, 19.5], true);
+    translate([0.75, -10.25, -3.75]) // side
+        cube([5, 1.5, 19.5], true);
 }
 
 module switch_cover() {
@@ -61,7 +61,7 @@ module inside() {
             
             // pcb hole
             translate([-1.5, 0, 0])
-                cube([7, 18, 2], true); 
+                cube([7, 19, 2], true); 
             translate([1, 0, 0])
                 cube([6, 10, 2], true);
             
