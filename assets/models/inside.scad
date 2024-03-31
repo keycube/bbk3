@@ -24,11 +24,11 @@ module battery_cover() {
 module pcb_cover() {
     translate([-1.25, 0, 4.75]) // top side
         cube([1, 18.5, 1.5], true);
-    translate([2.75, 0, 4.75]) // top side
-        cube([1, 18.5, 1.5], true);
+    translate([3.25, 0, 4.75]) // top side
+        cube([2, 18.5, 1.5], true);
     
-    translate([0.75, 0, 6.5]) // top flat
-        cube([5, 22, 2], true);
+    translate([1.25, 0, 6.5]) // top flat
+        cube([6, 22, 2], true);
     
     translate([0.75, 10.125, -4]) // side
         cube([5, 1.75, 19], true);
