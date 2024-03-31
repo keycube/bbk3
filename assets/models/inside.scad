@@ -84,6 +84,16 @@ module inside() {
         translate([-8, 0, 2])
             color("red")
             switch_cover();
+        
+        // fortification
+        translate([11.5, 0, 1])
+            cube([1, 24, 1], true);
+        translate([-11.5, 0, 1])
+            cube([1, 24, 1], true);
+        translate([0, 11.5, 1])
+            cube([24, 1, 1], true);
+        translate([0, -11.5, 1])
+            cube([24, 1, 1], true);
     }    
 }
 
