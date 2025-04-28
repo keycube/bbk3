@@ -24,7 +24,7 @@ module bottom(size, radius, innerRadius, outerRadius, spacing) {
     difference() {
         cube_rounded([width, depth, height*2], true, radius);
         translate([0, 0, height*-1])
-            
+            cube([width+0.1, depth+0.1, height*2], center = true);
         
         // Screw hole
         mirror_copy([0, 1, 0])
